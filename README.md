@@ -1,8 +1,8 @@
-# Luxury Handbag Store - 手提包独立站项目
+# WILDPACK - Outdoor Backpack Showcase Website
 
 ## 项目概述
 
-本项目是一个基于Vue 3 + Vite构建的高端手提包电子商务网站，旨在提供优雅的用户体验和直观的购物流程。网站包含产品展示、购物车功能、响应式设计等核心特性，适用于各种设备访问。
+This project is an outdoor backpack showcase website built with Vue 3 + Vite, designed to highlight premium backpack products with an emphasis on adventure and quality. The website features product galleries, animated sections, and a responsive design suitable for all device access. Recently updated to focus specifically on backpack products with improved image management and internationalization.
 
 ## 环境要求
 
@@ -80,11 +80,12 @@ cmd /c npm run preview
 
 ### 核心模块功能
 
-1. **产品展示模块**：展示手提包产品列表，包含图片、标题、价格和添加购物车功能
-2. **购物车模块**：管理用户添加的商品，支持增减数量和删除操作
-3. **导航栏模块**：提供网站导航和购物车入口
-4. **页脚模块**：展示品牌信息和版权声明
-5. **响应式设计**：适配各种屏幕尺寸，提供移动端友好的用户体验
+1. **Hero Section**：突出展示背包产品主图，配合动态入场动画增强视觉冲击力
+2. **Backpack Features**：展示背包核心特性，包括超轻构造、防水设计、模块化组织和人体工学悬挂系统
+3. **Gallery Module**：展示背包产品图片集，支持交互悬停效果
+4. **Navigation Module**：提供英文导航菜单，包含探索、特性、画廊和联系方式等入口
+5. **Responsive Design**：适配各种屏幕尺寸，使用clamp()响应式字体和auto-fit自适应网格布局
+6. **Centralized Image Management**：实现集中式图片配置，方便后续更新和维护
 
 ### 技术栈选型及理由
 
@@ -94,13 +95,13 @@ cmd /c npm run preview
 
 ## 使用指南
 
-### 基础功能操作说明
+### 网站功能说明
 
-1. **浏览产品**：在首页滚动查看所有手提包产品
-2. **查看产品详情**：点击产品图片或名称查看详细信息
-3. **添加到购物车**：点击产品卡片上的"添加到购物车"按钮将商品添加到购物车
-4. **查看购物车**：点击导航栏右上角的购物车图标查看购物车内容
-5. **修改购物车**：在购物车中可以调整商品数量或移除商品
+1. **浏览背包展示**：在首页滚动查看所有背包产品展示内容
+2. **查看背包特性**：在Features部分了解背包的核心技术特点
+3. **浏览产品画廊**：在Gallery部分查看更多背包产品图片
+4. **导航浏览**：使用顶部导航栏在不同页面区域间切换
+5. **响应式体验**：网站支持在手机、平板和桌面设备上的良好展示效果
 
 ## 常见问题解决方法
 

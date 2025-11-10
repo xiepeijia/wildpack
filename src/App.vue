@@ -4,54 +4,54 @@
     <header class="hero-nav">
       <div class="logo">WILDPACK</div>
       <nav class="main-nav">
-        <a href="#explore" class="nav-link">探索</a>
-        <a href="#features" class="nav-link">特点</a>
-        <a href="#gallery" class="nav-link">画廊</a>
-        <a href="#contact" class="nav-link">联系我们</a>
+        <a href="#explore" class="nav-link">Explore</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </header>
 
     <!-- 艺术化英雄区域 -->
     <section class="hero-section">
       <div class="hero-content">
-        <h1 class="hero-title">极限探险<br>从背包开始</h1>
-        <p class="hero-subtitle">为冒险者设计的艺术级装备，融合功能性与美学的完美平衡</p>
-        <button class="explore-btn">发现系列</button>
+        <h1 class="hero-title">Adventure<br>Starts Here</h1>
+        <p class="hero-subtitle">Premium backpacks designed for explorers, where functionality meets artistic excellence</p>
+        <button class="explore-btn">Explore Collection</button>
       </div>
       <div class="hero-image-container">
         <div class="hero-image-wrapper">
-          <img src="https://picsum.photos/id/29/800/1000" alt="探险背包" class="hero-image">
+          <img :src="images.hero" alt="Premium Outdoor Backpack" class="hero-image">
         </div>
       </div>
     </section>
 
-    <!-- 特点展示区域 -->
+    <!-- 背包特点展示 -->
     <section id="features" class="features-section">
       <div class="section-title">
-        <h2>革命性设计</h2>
+        <h2>Backpack Innovation</h2>
         <div class="title-accent"></div>
       </div>
       
       <div class="features-grid">
         <div class="feature-item">
-          <div class="feature-icon">⛰️</div>
-          <h3>轻量化结构</h3>
-          <p>航空级材料打造，减轻负重的同时保证强度和耐久性</p>
+          <div class="feature-icon">🎒</div>
+          <h3>Ultralight Construction</h3>
+          <p>Aircraft-grade materials create backpacks that are lightweight yet incredibly strong and durable</p>
         </div>
         <div class="feature-item">
           <div class="feature-icon">💧</div>
-          <h3>全天候防护</h3>
-          <p>专业防水技术，确保装备在任何天气条件下保持干燥</p>
+          <h3>Weatherproof Design</h3>
+          <p>Professional waterproof technology ensures your backpack and its contents stay dry in any conditions</p>
         </div>
         <div class="feature-item">
           <div class="feature-icon">🧩</div>
-          <h3>模块化设计</h3>
-          <p>可定制收纳系统，根据不同探险需求灵活调整内部空间</p>
+          <h3>Modular Organization</h3>
+          <p>Customizable storage systems that adapt to different backpacking needs with flexible interior space</p>
         </div>
         <div class="feature-item">
           <div class="feature-icon">🏔️</div>
-          <h3>人体工学背负</h3>
-          <p>专利悬浮背负系统，分散重量，减少长时间负重的疲劳感</p>
+          <h3>Ergonomic Suspension</h3>
+          <p>Patented suspension system distributes weight evenly, reducing fatigue during long treks</p>
         </div>
       </div>
     </section>
@@ -60,19 +60,19 @@
     <section id="gallery" class="gallery-section">
       <div class="gallery-grid">
         <div class="gallery-item large-portrait">
-          <img src="https://picsum.photos/id/28/600/900" alt="高山探险背包">
+          <img :src="images.gallery[0]" alt="Alpine Backpack">
         </div>
         <div class="gallery-item square">
-          <img src="https://picsum.photos/id/36/600/600" alt="徒步背包细节">
+          <img :src="images.gallery[1]" alt="Backpack Details">
         </div>
         <div class="gallery-item wide">
-          <img src="https://picsum.photos/id/180/900/600" alt="户外使用场景">
+          <img :src="images.gallery[2]" alt="Backpack Closeup">
         </div>
         <div class="gallery-item square">
-          <img src="https://picsum.photos/id/30/600/600" alt="背包特写">
+          <img :src="images.gallery[3]" alt="Backpack Showcase">
         </div>
         <div class="gallery-item wide">
-          <img src="https://picsum.photos/id/42/900/600" alt="多背包组合">
+          <img :src="images.gallery[4]" alt="Backpack in Use">
         </div>
       </div>
     </section>
@@ -80,23 +80,23 @@
     <!-- 探险故事区域 -->
     <section class="story-section">
       <div class="story-content">
-        <h2>探险的艺术</h2>
-        <p>WILDPACK不仅仅是背包，更是探险精神的载体。每一款设计都源自真实的户外体验，融合了艺术家的视角与工程师的精准。我们相信，装备不只是工具，更是探险者与自然之间的桥梁。</p>
-        <button class="story-btn">了解设计理念</button>
+        <h2>The Art of Backpacking</h2>
+        <p>WILDPACK is more than just backpacks—it's the essence of exploration. Each design is born from real outdoor experiences, combining artistic vision with engineering precision. We believe gear isn't just equipment; it's the bridge between explorer and nature.</p>
+        <button class="story-btn">Discover Design Philosophy</button>
       </div>
       <div class="story-image-container">
-        <img src="https://picsum.photos/id/43/800/600" alt="探险故事" class="story-image">
+        <img :src="images.story" alt="Backpack Design Story" class="story-image">
       </div>
     </section>
 
     <!-- 底部区域 -->
     <section id="contact" class="contact-section">
       <div class="contact-content">
-        <h2>加入探险者社区</h2>
-        <p>订阅我们的通讯，获取最新产品信息和探险指南</p>
+        <h2>Join the Explorer Community</h2>
+        <p>Subscribe to our newsletter for the latest product updates and backpacking guides</p>
         <form class="subscribe-form">
-          <input type="email" placeholder="您的邮箱地址" required>
-          <button type="submit">订阅</button>
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
         </form>
       </div>
     </section>
@@ -105,9 +105,9 @@
       <div class="footer-content">
         <div class="footer-logo">WILDPACK</div>
         <div class="footer-links">
-          <a href="#">隐私政策</a>
-          <a href="#">使用条款</a>
-          <a href="#">联系我们</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Us</a>
         </div>
         <div class="social-links">
           <a href="#" class="social-icon">🔗</a>
@@ -116,7 +116,7 @@
         </div>
       </div>
       <div class="copyright">
-        © 2023 WILDPACK. 探险无界，设计无疆。
+        © 2023 WILDPACK. Unlimited Exploration, Boundless Design.
       </div>
     </footer>
   </div>
@@ -127,11 +127,29 @@ export default {
   name: 'AdventureBackpackLanding',
   data() {
     return {
-      // 移除购物车相关数据
+      // 图片配置 - 方便替换的图片路径对象
+      images: {
+        hero: 'https://picsum.photos/id/1060/800/1000', // 背包特写
+        gallery: [
+          'https://picsum.photos/id/1059/600/900', // 户外背包
+          'https://picsum.photos/id/1057/600/600', // 背包细节
+          'https://picsum.photos/id/1058/900/600', // 背包特写
+          'https://picsum.photos/id/1061/600/600', // 背包展示
+          'https://picsum.photos/id/1062/900/600'  // 背包使用场景
+        ],
+        story: 'https://picsum.photos/id/1063/800/600' // 背包设计故事
+      }
     }
   },
   methods: {
-    // 移除购物车相关方法
+    // 可以添加图片管理方法，如更新图片路径等
+    updateImage(category, index, newUrl) {
+      if (category === 'gallery' && this.images.gallery[index] !== undefined) {
+        this.images.gallery[index] = newUrl;
+      } else if (this.images[category]) {
+        this.images[category] = newUrl;
+      }
+    }
   }
 }
 </script>
@@ -148,7 +166,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #app {
@@ -184,7 +202,9 @@ html, body {
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.3), transparent);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .logo {
@@ -237,6 +257,7 @@ html, body {
   display: flex;
   overflow: hidden;
   position: relative;
+  background-color: var(--primary);
 }
 
 .hero-content {
@@ -262,21 +283,24 @@ html, body {
 }
 
 .hero-title {
-  font-size: 5rem;
+  font-size: clamp(2.5rem, 5vw, 5rem);
   font-weight: 900;
   line-height: 1.1;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
+  letter-spacing: -1px;
+  animation: fadeInUp 1s ease-out 0.2s both;
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   line-height: 1.6;
   margin-bottom: 2.5rem;
   max-width: 400px;
   color: rgba(255, 255, 255, 0.9);
+  animation: fadeInUp 1s ease-out 0.4s both;
 }
 
 .explore-btn {
@@ -291,12 +315,16 @@ html, body {
   cursor: pointer;
   transition: all 0.3s ease;
   align-self: flex-start;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(255, 90, 54, 0.3);
+  animation: fadeInUp 1s ease-out 0.6s both;
 }
 
 .explore-btn:hover {
   background-color: white;
   color: var(--accent);
-  transform: translateX(10px);
+  transform: translateX(10px) translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 90, 54, 0.4);
 }
 
 .hero-image-container {
@@ -313,6 +341,7 @@ html, body {
   height: 100%;
   transform: scale(1.2);
   transition: transform 1s ease;
+  animation: slideInRight 1.2s ease-out both;
 }
 
 .hero-section:hover .hero-image-wrapper {
@@ -355,7 +384,7 @@ html, body {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2.5rem;
   max-width: 1400px;
   margin: 0 auto;
@@ -370,7 +399,13 @@ html, body {
   overflow: hidden;
   transition: all 0.3s ease;
   transform: translateY(0);
+  animation: fadeInUp 0.8s ease-out both;
 }
+
+.feature-item:nth-child(1) { animation-delay: 0.2s; }
+.feature-item:nth-child(2) { animation-delay: 0.4s; }
+.feature-item:nth-child(3) { animation-delay: 0.6s; }
+.feature-item:nth-child(4) { animation-delay: 0.8s; }
 
 .feature-item:hover {
   transform: translateY(-15px);
@@ -404,10 +439,12 @@ html, body {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(300px, auto);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
   gap: 1px;
   background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 100%;
 }
 
 .gallery-item {
@@ -456,6 +493,7 @@ html, body {
   align-items: stretch;
   min-height: 80vh;
   background-color: white;
+  position: relative;
 }
 
 .story-content {
@@ -463,16 +501,19 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4rem;
+  padding: clamp(2rem, 5vw, 4rem);
   background-color: var(--light);
+  position: relative;
+  z-index: 1;
 }
 
 .story-content h2 {
-  font-size: 2.8rem;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 800;
   color: var(--primary);
   margin-bottom: 2rem;
   line-height: 1.2;
+  letter-spacing: -1px;
 }
 
 .story-content p {
@@ -499,6 +540,7 @@ html, body {
 .story-btn:hover {
   background-color: var(--accent);
   transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 90, 54, 0.3);
 }
 
 .story-image-container {
@@ -545,6 +587,9 @@ html, body {
   max-width: 600px;
   margin: 0 auto;
   gap: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .subscribe-form input {
@@ -553,6 +598,8 @@ html, body {
   border: none;
   font-size: 1rem;
   outline: none;
+  transition: all 0.3s ease;
+  background-color: white;
 }
 
 .subscribe-form button {
@@ -563,7 +610,9 @@ html, body {
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .subscribe-form button:hover {
@@ -582,6 +631,8 @@ html, body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .footer-logo {
@@ -630,14 +681,42 @@ html, body {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* 全局动画定义 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* 移动端响应式设计 */
 @media (max-width: 1200px) {
   .hero-title {
-    font-size: 4rem;
+    font-size: clamp(3rem, 6vw, 4rem);
   }
   
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero-content,
+  .hero-image-container {
+    flex: 1;
   }
 }
 
@@ -679,10 +758,12 @@ html, body {
 @media (max-width: 768px) {
   .hero-content {
     padding: 0 2rem;
+    text-align: center;
+    align-items: center;
   }
   
   .hero-title {
-    font-size: 3rem;
+    font-size: clamp(2rem, 8vw, 3.5rem);
   }
   
   .features-section,
@@ -704,6 +785,15 @@ html, body {
     flex-direction: column;
     gap: 2rem;
     text-align: center;
+  }
+  
+  .subscribe-form {
+    flex-direction: column;
+    width: 90%;
+  }
+  
+  .feature-item {
+    padding: 2rem 1.5rem;
   }
 }
 
